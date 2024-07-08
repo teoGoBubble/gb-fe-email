@@ -7,7 +7,7 @@
 		"start": "webpack serve --mode development",
 		"test": "npx jest",
 		"build": "email build",
-		"dev": "email dev",
+  "dev": "ts-node buildconfig.ts --watch",
 		"export": "email export"
 	},
 	"repository": {
@@ -35,9 +35,16 @@
 		"@types/react": "18.2.33",
 		"@types/react-dom": "18.2.14",
 		"file-loader": "^6.2.0",
+		"tsconfig-paths": "^4.2.0",
 		"url-loader": "^4.1.1",
 		"webpack": "^5.92.1",
 		"webpack-cli": "^5.1.4",
 		"webpack-dev-server": "^5.0.4"
-	}
+	},
+	"compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+		"@/*": ["*"]
+    }
+}
 }

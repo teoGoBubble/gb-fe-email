@@ -1,15 +1,15 @@
-const esbuild = require('esbuild');
-const { fileLoader } = require('esbuild-plugin-file-loader');
+import * as esbuild from 'esbuild'
+import * as path from 'path'
+import { tsPaths } from './esbuild-plugin-tspaths'
 
-esbuild.build({
-  entryPoints: ['./src/index.js'], // adjust this to your entry point
+const buildOptions: esbuild.BuildOptions = {
+  entryPoints: ['@/emails/index.ts'],
   bundle: true,
-  outfile: 'dist/bundle.js', // adjust output as needed
-  plugins: [
-    fileLoader({
-      loader: 'file',
-      name: '[name]-[hash].[ext]',
-      extensions: ['.png', '.jpg', '.jpeg', '.gif', '.svg'],
-    }),
-  ],
-}).catch(() => process.exit(1));
+  outfile: '@/dist/index.js',
+  platform: 'node',
+  target: 'node14',
+  format: 'cjs',
+  plugins: [tsPaths],
+}
+
+esbuild.build(buildOptions).catch(() => process.exit(1))
