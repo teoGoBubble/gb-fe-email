@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    assetModuleFilename: 'images/[name][ext]'
+    assetModuleFilename: 'images/[name][ext]',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
@@ -21,12 +21,12 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         type: 'asset/resource',
-      }
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './emails/index.html',
     }),
-  ]
+  ],
 };

@@ -5,15 +5,19 @@
   "scripts": {
     "build": "email build",
     "dev": "email dev",
-    "export": "email export"
+    "export": "email export",
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --check ."
   },
   "dependencies": {
     "@react-email/components": "0.0.21",
-    "react-email": "2.1.5",
-    "react": "^18.2.0"
+    "@responsive-email/react-email": "^0.0.2",
+    "react": "^18.2.0",
+    "react-email": "2.1.5"
   },
   "devDependencies": {
     "@types/react": "18.2.33",
-    "@types/react-dom": "18.2.14"
+    "@types/react-dom": "18.2.14",
+    "prettier": "^3.3.2"
   }
 }
