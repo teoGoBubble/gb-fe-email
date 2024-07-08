@@ -1,0 +1,98 @@
+const createGlobalTheme = () => {
+	const primitives = {
+		white: '#ffffff',
+		primary25: '#FCFAFF',
+		primary50: '#F9F5FF',
+		primary100: '#F4EBFF',
+		primary200: '#E9D7FE',
+		primary300: '#D6BBFB',
+		primary400: '#B692F6',
+		primary500: '#9E77ED',
+		primary600: '#7F56D9',
+		primary700: '#6941C6',
+		primary800: '#53389E',
+		primary900: '#42307D',
+		gray25: '#FCFCFD',
+		gray50: '#F9FAFB',
+		gray100: '#F2F4F7',
+		gray200: '#EAECF0',
+		gray300: '#D0D5DD',
+		gray400: '#98A2B3',
+		gray500: '#667085',
+		gray600: '#475467',
+		gray700: '#344054',
+		gray800: '#1D2939',
+		gray900: '#101828',
+		red25: '#FFFBFA',
+		red50: '#FEF3F2',
+		red100: '#FEE4E2',
+		red200: '#FECDCA',
+		red300: '#FDA29B',
+		red400: '#F97066',
+		red500: '#F04438',
+		red600: '#D92D20',
+		red700: '#B42318',
+		red800: '#912018',
+		red900: '#7A271A',
+		green25: '#F6FEF9',
+		green50: '#ECFDF3',
+		green100: '#D1FADF',
+		green200: '#A6F4C5',
+		green300: '#6CE9A6',
+		green400: '#32D583',
+		green500: '#12B76A',
+		green600: '#039855',
+		green700: '#027A48',
+		green800: '#05603A',
+		green900: '#054F31',
+		amber25: '#FFFCF5',
+		amber50: '#FFFAEB',
+		amber100: '#FEF0C7',
+		amber200: '#FEDF89',
+		amber300: '#FEC84B',
+		amber400: '#FDB022',
+		amber500: '#F79009',
+		amber600: '#DC6803',
+		amber700: '#B54708',
+		amber800: '#93370D',
+		amber900: '#7A2E0E',
+	};
+
+	const padding = {
+		xl: '40px 125px',
+		lg: '60px',
+		md: '40px',
+		sm: '10px 18px',
+	};
+
+	const colors = {
+		text: {
+			heading: primitives.gray900,
+			body: primitives.gray600,
+			dim: primitives.gray500,
+			accent: primitives.primary700,
+			onPrimary: primitives.white,
+			onPrimaryDim: primitives.primary500,
+		},
+		border: {
+			default: primitives.gray300,
+			focus: primitives.primary500,
+			onPrimary: primitives.primary600,
+		},
+		background: {
+			default: primitives.white,
+			dim: primitives.gray50,
+			primaryShade: primitives.primary800,
+			primary: primitives.primary700,
+			primaryDim: primitives.primary600,
+		},
+	};
+
+	return {
+		primitives,
+		padding,
+		colors,
+	};
+};
+
+export const globalTheme = createGlobalTheme();
