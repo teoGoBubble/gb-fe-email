@@ -8,7 +8,8 @@ import {
 	contentElement,
 } from './styles';
 
-import gobubbleLogo from '@/static/gobubble-logo.png'
+import gobubbleLogo from '../static/gobubble-logo.png'
+
 
 const Email = () => {
 	return (
