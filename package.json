@@ -1,59 +1,19 @@
 {
-	"name": "gb-fe-email",
-	"version": "1.0.0",
-	"type": "module",
-	"description": "Gobubble email UI",
-	"main": "index.js",
-	"scripts": {
-		"start": "webpack serve --mode development",
-		"test": "npx jest",
-    	"dev": "ts-node-esm buildconfig.mts --watch",
-    	"build": "ts-node-esm buildconfig.mts",
-		"export": "email export"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/GoBubbleDev/gb-fe-email.git"
-	},
-	"keywords": [
-		"gobubble",
-		"frontend",
-		"email"
-	],
-	"author": "matteo@gobubble.com",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/GoBubbleDev/gb-fe-email/issues"
-	},
-	"homepage": "https://github.com/GoBubbleDev/gb-fe-email#readme",
-	"dependencies": {
-		"@react-email/components": "0.0.18",
-		"fsevents": "^2.3.3",
-		"react": "^18.2.0",
-		"react-email": "2.1.4"
-	},
-	"devDependencies": {
-		"@types/react": "18.2.33",
-		"@types/react-dom": "18.2.14",
-		"esbuild-plugin-inline-image": "^0.0.9",
-		"file-loader": "^6.2.0",
-		"ts-node": "^10.9.2",
-		"tsconfig-paths": "^4.2.0",
-		"url-loader": "^4.1.1",
-		"webpack": "^5.92.1",
-		"webpack-cli": "^5.1.4",
-		"webpack-dev-server": "^5.0.4"
-	},
-	"compilerOptions": {
-		"target": "ES2020",
-		"module": "ESNext",
-		"moduleResolution": "node",
-		"esModuleInterop": true,
-		"strict": true,
-		"jsx": "react",
-		"allowJs": true,
-		"outDir": "./dist"
-	  },
-	  "include": ["**/*.ts", "**/*.tsx", "global.d.ts"],
-	  "exclude": ["node_modules"]
+  "name": "emails",
+  "version": "0.0.19",
+  "private": true,
+  "scripts": {
+    "build": "email build",
+    "dev": "email dev",
+    "export": "email export"
+  },
+  "dependencies": {
+    "@react-email/components": "0.0.21",
+    "react-email": "2.1.5",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.33",
+    "@types/react-dom": "18.2.14"
+  }
 }

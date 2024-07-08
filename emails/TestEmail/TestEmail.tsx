@@ -1,4 +1,5 @@
-import { Button, Html } from '@react-email/components';
+import { Button, Html, Img} from '@react-email/components';
+
 import * as React from 'react';
 import {
 	mainWrapper,
@@ -8,7 +9,7 @@ import {
 	contentElement,
 } from './styles';
 
-import gobubbleLogo from '../static/gobubble-logo.png'
+// import gobubbleLogo from '../static/gobubble-logo.png'
 
 
 const Email = () => {
@@ -16,7 +17,7 @@ const Email = () => {
 		<Html>
 			<div id="mainWrapper" style={mainWrapper}>
 				<div id="logoWrapper" style={logoWrapper}>
-					<img src={gobubbleLogo} alt="gobubble logo" />
+					<Img src='../static/gobubble-logo.png' alt="gobubble logo" width={300} height={20}/>
 				</div>
 				<div id="mailContentWrapper" style={mailContentWrapper}>
 					<div id="mailContent" style={mailContent}>
