@@ -1,15 +1,22 @@
 import * as esbuild from 'esbuild'
 import * as path from 'path'
-import { imagePlugin } from './esbuild-image-plugin'
+import inlineImage from './esbuild-image-plugin'
+import { tsPaths } from './esbuild-plugin-tspaths'
 
 const buildOptions: esbuild.BuildOptions = {
-  entryPoints: [path.resolve(__dirname, 'emails/index.ts')],
+  entryPoints: [path.join(__dirname, 'emails/index.ts')],
   bundle: true,
-  outfile: path.resolve(__dirname, 'dist/index.js'),
+  outfile: path.join(__dirname, 'dist/index.js'),
   platform: 'node',
   target: 'node14',
   format: 'cjs',
-  plugins: [imagePlugin],
+  plugins: [inlineImage(), tsPaths],
+  external: ['@react-email/components', '@react-email/render'],
+  loader: {
+    '.png': 'file',
+    '.jpg': 'file',
+    '.svg': 'file',
+  },
 }
 
 esbuild.build(buildOptions).catch(() => process.exit(1))
