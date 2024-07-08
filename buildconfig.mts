@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const buildOptions: esbuild.BuildOptions = {
-  entryPoints: [path.join(__dirname, 'emails/index.ts')],
+  entryPoints: [path.join(__dirname, 'emails/TestEmail/TestEmail.tsx')],
   bundle: true,
   outfile: path.join(__dirname, 'dist/index.js'),
   platform: 'node',
@@ -19,4 +19,13 @@ const buildOptions: esbuild.BuildOptions = {
   resolveExtensions: ['.ts', '.tsx', '.js', '.jsx', '.json', '.png', '.jpg', '.jpeg', '.gif', '.svg'],
 };
 
-esbuild.build(buildOptions).catch(() => process.exit(1));
+console.log('Starting build...');
+
+esbuild.build(buildOptions)
+  .then(() => console.log('Build completed successfully!'))
+  .catch((error) => {
+    console.error('Build failed:', error);
+    process.exit(1);
+  });
+
+console.log('Build process initiated. Watching for changes...');
