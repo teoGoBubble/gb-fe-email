@@ -16,26 +16,31 @@ const Email = () => {
 	return (
 		<Html>
 			<div id="mainWrapper" style={mainWrapper}>
-				<div id="logoWrapper" style={logoWrapper}>
-					<Img src='../static/gobubble-logo.png' alt="gobubble logo" width={300} height={20}/>
-				</div>
 				<div id="mailContentWrapper" style={mailContentWrapper}>
+					<div id="logoWrapper" style={logoWrapper}>
+						<Img src="/static/gobubble-logo.png" alt="gobubble logo" />
+					</div>
 					<div id="mailContent" style={mailContent}>
-						<div id="contentElement" style={contentElement}></div>
-						<div id="contentElement" style={contentElement}></div>
+						<div id="contentElement" style={contentElement}>
+							kjbsdojbns
+						</div>
+						<div id="contentElement" style={contentElement}>
+							<div>ihvbdc</div>
+							<div>ihvbdc</div>
+						</div>
 						<div id="contentElement" style={contentElement}></div>
 					</div>
 				</div>
 				<div
 					id="footer"
 					style={{ ...contentElement, background: '#fff' }}
-				></div>
-				{/* <Button
+				>oihdvkjbsd</div>
+				<Button
 					href="https://example.com"
 					style={{ background: '#000', color: '#fff', padding: '12px 20px' }}
 				>
 					Click me
-				</Button> */}
+				</Button>
 			</div>
 		</Html>
 	);

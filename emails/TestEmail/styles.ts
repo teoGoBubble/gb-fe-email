@@ -21,6 +21,7 @@ export const logoWrapper: CSSProperties = {
 export const mailContentWrapper: CSSProperties = {
 	boxSizing: 'border-box',
 	width: '100%',
+	height: 'auto',
 	padding: padding.md,
 	background: colors.background.default,
 };
