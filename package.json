@@ -7,8 +7,8 @@
 	"scripts": {
 		"start": "webpack serve --mode development",
 		"test": "npx jest",
-		"build": "email build",
-		"dev": "ts-node buildconfig.ts --watch",
+    	"dev": "ts-node-esm buildconfig.mts --watch",
+    	"build": "ts-node-esm buildconfig.mts",
 		"export": "email export"
 	},
 	"repository": {
