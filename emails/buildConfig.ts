@@ -1,15 +1,15 @@
 import * as esbuild from 'esbuild'
 import * as path from 'path'
-import { tsPaths } from './esbuild-plugin-tspaths'
+import { imagePlugin } from './esbuild-image-plugin'
 
 const buildOptions: esbuild.BuildOptions = {
-  entryPoints: ['@/emails/index.ts'],
+  entryPoints: [path.resolve(__dirname, 'emails/index.ts')],
   bundle: true,
-  outfile: '@/dist/index.js',
+  outfile: path.resolve(__dirname, 'dist/index.js'),
   platform: 'node',
   target: 'node14',
   format: 'cjs',
-  plugins: [tsPaths],
+  plugins: [imagePlugin],
 }
 
 esbuild.build(buildOptions).catch(() => process.exit(1))
