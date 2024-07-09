@@ -81,39 +81,39 @@ export const alertButton: CSSProperties = {
     borderRadius: borderRadius.sm,
 };
 
-// export const mainButton: CSSProperties = {
-//     background: colors.background.primary,
-//     color: colors.text.onPrimary,
-//     padding: `${padding.md} ${padding.lg}`,
-//     textDecoration: 'none',
-//     borderRadius: borderRadius.sm,
-//     display: 'block',
-//     width: 'fit-content',
-//     margin: `${space.md} auto`,
-// };
+export const mainButton: CSSProperties = {
+    background: colors.background.primary,
+    color: colors.text.onPrimary,
+    padding: `${padding.md} ${padding.lg}`,
+    textDecoration: 'none',
+    borderRadius: borderRadius.sm,
+    display: 'block',
+    width: 'fit-content',
+    margin: `${space.md} auto`,
+};
 
-// export const footerText: CSSProperties = {
-//     fontSize: fonts.size.md,
-//     textAlign: 'center',
-//     marginTop: space.md,
-// };
+export const footerText: CSSProperties = {
+    fontSize: fonts.size.md,
+    textAlign: 'center',
+    marginTop: space.md,
+};
 
-// export const footer: CSSProperties = {
-//     textAlign: 'center',
-//     padding: padding.md,
-//     background: colors.background.dim,
-// };
+export const footer: CSSProperties = {
+    textAlign: 'center',
+    padding: padding.md,
+    background: colors.background.dim,
+};
 
-// export const footerNote: CSSProperties = {
-//     fontSize: fonts.size.sm,
-//     color: colors.text.dim,
-//     marginBottom: space.sm,
-// };
+export const footerNote: CSSProperties = {
+    fontSize: fonts.size.sm,
+    color: colors.text.dim,
+    marginBottom: space.sm,
+};
 
-// export const footerAddress: CSSProperties = {
-//     fontSize: fonts.size.sm,
-//     color: colors.text.dim,
-// };
+export const footerAddress: CSSProperties = {
+    fontSize: fonts.size.sm,
+    color: colors.text.dim,
+};
 
 export const icon: CSSProperties = {
     width: '20px',

@@ -11,13 +11,15 @@ import {
     Font,
   } from '@react-email/components';
   import * as React from 'react';
-import { alertButton, iconStyle, textStyle } from './MailButton.styled';
+import { alertButton } from './MailButton.styled';
 
 
 const link = 'https://example.com';
 
 
-export const MailButton = () => {
+export const MailButton = ({style: string}) => {
+
+    // TODO conditionally render primary or econdary button depending on props
 
     return (
         <Button href={link} style={alertButton}>

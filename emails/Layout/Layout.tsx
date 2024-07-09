@@ -63,21 +63,22 @@ import {
                 <Text style={alertMessage}>
                   “[critical message]”
                 </Text>
-                    <MailButton style='secondary' />
+                <MailButton style='secondary' />
               </Container>
-              {/* <Text style={subText}>
+              <Text style={subText}>
                 You can review or manage this critical content in your Moderation Hub
               </Text>
+
               <Button href='https://example.com' style={mainButton}>
                 Go to alerts
               </Button>
               <Text style={footerText}>
                 Thanks,<br />
                 Freedom2Hear Team, GoBubble
-              </Text> */}
+              </Text>
             </Container>
           </Section>
-          {/* <Container style={footer}>
+          <Container style={footer}>
             <Row>
               <Column>
                 <Button href='https://uk.linkedin.com/company/gobubble'>
@@ -107,7 +108,7 @@ import {
             <Text style={footerAddress}>
               Unit 208, Level 1, Gate Avenue - South Zone, DIFC, Dubai, United Arab Emirates
             </Text>
-          </Container> */}
+          </Container>
         </Container>
       </Html>
     );

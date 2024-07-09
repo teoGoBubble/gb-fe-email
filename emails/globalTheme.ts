@@ -1,3 +1,5 @@
+import { theme } from '@gobubbledev/fe-components';
+
 const createGlobalTheme = () => {
   const size = {
     mobile: '576px',
