@@ -69,7 +69,7 @@ const createGlobalTheme = () => {
 
   const fonts = {
     family: {
-      website: `'DM Sans', sans-serif`,
+      website: "'DM Sans', sans-serif",
     },
     size: {
       xs: '12px',
@@ -100,6 +100,7 @@ const createGlobalTheme = () => {
     sm: '16px',
     md: '24px',
     lg: '32px',
+    xl: '40px',
     single: '4px',
     double: '8px',
     multiple: (n: number) => `${n * 4}px`,
